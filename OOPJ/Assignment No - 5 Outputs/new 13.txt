@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Problem19 {
+    public static void main(String[] args) {
+	Map<String, Integer> grade = new HashMap<>();
+		grade.put("Amit", 85);
+		grade.put("Priya", 92);
+		
+		System.out.println("Grade Report :" );
+		
+		int i =0, size = grade.size();
+		for(Map.Entry<String, Integer> entry : grade.entrySet()){
+			System.out.println(entry.getKey() + ":" + entry.getValue());
+			if(++i < size)System.out.print(",");
+		}
+		
+	}
+}
